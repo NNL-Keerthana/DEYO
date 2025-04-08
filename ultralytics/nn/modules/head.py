@@ -220,13 +220,14 @@ class RTDETRDecoder(Detect):
     """
 
     export = False  # export mode
+# DEYO-S    nq=300 hd=128 o2m: yolov8s
 
     def __init__(
         self,
         nc=80,
         ch=(512, 1024, 2048),
-        hd=64,  # hidden dim
-        nq=100,  # num queries
+        hd=128,  # hidden dim
+        nq=300,  # num queries
         ndp=4,  # num decoder points
         nh=8,  # num head
         ndl=6,  # num decoder layers
